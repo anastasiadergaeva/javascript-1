@@ -21,8 +21,7 @@ function getConversionFactor (targetCurrency) {
 
 function currencyConversion (sumOfMoney, targetCurrency) {
     const currency = getConversionFactor(targetCurrency);
-    const moneyInCurrency = currency * sumOfMoney;
-    return moneyInCurrency;
+    return currency * sumOfMoney;
 }
 
 console.log(currencyConversion(1000, 'GPB'));

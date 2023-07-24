@@ -3,7 +3,7 @@ const encryptedPassword = 'pmisel';
 
 function getEncryptedPassword(password) {
     const passwordToArray = password.split('');
-    const encryptedPassword = ((passwordToArray.splice(-2).concat(passwordToArray)).reverse()).join('');
+    const encryptedPassword = passwordToArray.splice(-2).concat(passwordToArray).reverse().join('');
     console.log(`Пароль зашифрован. Зашифрованный пароль: ${encryptedPassword}`);
 }
 
